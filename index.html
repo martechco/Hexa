@@ -1,40 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Hexa | Secure Website Designer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hexa | Secure Website Designer</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <!-- Navbar -->
-    <header>
-        <nav>
-            <div class="logo">Hexa</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="menu-toggle">&#9776;</div>
-        </nav>
-    </header>
+<header>
+    <nav>
+        <div class="logo">Hexa</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">&#9776;</div>
+    </nav>
+</header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-text">
-            <h1>Hi, I'm <span class="highlight">Hexa</span></h1>
-            <h2><span id="typing"></span></h2>
-            <p>
-                I design and build secure, modern websites for businesses and startups.
-                Specializing in responsive design, cybersecurity integration,
+<section id="home" class="hero">
+    <div class="hero-text">
+        <h1>Hi, I'm <span class="highlight">Hexa</span></h1>
+        <h2 id="typing"></h2>
+        <p>I build secure, modern and responsive websites for businesses and startups.</p>
+        <a href="#contact" class="btn">Hire Me</a>
+    </div>
+
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1581092795360-9e7e1a1a3c3f?auto=format&fit=crop&w=600&q=80" alt="Website Designer">
+    </div>
+</section>
+
+<section id="services" class="section">
+    <h2>My Services</h2>
+    <div class="cards">
+        <div class="card">Web Design</div>
+        <div class="card">Secure Development</div>
+        <div class="card">SEO Optimization</div>
+    </div>
+</section>
+
+<section id="reviews" class="section dark">
+    <h2>Customer Reviews</h2>
+    <div class="reviews">
+        <div class="review">
+            <p>"Hexa built a secure and beautiful website for my company!"</p>
+            <h4>- Daniel M.</h4>
+        </div>
+        <div class="review">
+            <p>"Very professional and delivers on time. Highly recommend."</p>
+            <h4>- Sarah T.</h4>
+        </div>
+        <div class="review">
+            <p>"My business traffic increased after working with Hexa."</p>
+            <h4>- James K.</h4>
+        </div>
+    </div>
+</section>
+
+<section id="pricing" class="section">
+    <h2>Website Pricing Calculator</h2>
+
+    <div class="calculator">
+        <label>Number of Pages:</label>
+        <input type="number" id="pages" value="1" min="1">
+
+        <label>
+            <input type="checkbox" id="seo"> Include SEO (+ $100)
+        </label>
+
+        <label>
+            <input type="checkbox" id="security"> Advanced Security (+ $150)
+        </label>
+
+        <button onclick="calculatePrice()" class="btn">Calculate</button>
+
+        <h3>Total Price: $<span id="total">0</span></h3>
+    </div>
+</section>
+
+<section id="contact" class="section dark">
+    <h2>Contact Me</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button class="btn">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    © 2026 Hexa | Secure Website Designer
+</footer>
+
+<script src="script.js"></script>
+</body>
+                </html>                Specializing in responsive design, cybersecurity integration,
                 and performance optimization.
             </p>
             <div class="buttons">
