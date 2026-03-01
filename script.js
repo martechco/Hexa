@@ -1,27 +1,36 @@
 // Typing effect
-const text="Secure Website Designer";
-let i=0;
-function typing(){
-  if(i<text.length){
-    document.getElementById("typing").innerHTML+=text.charAt(i);
+const text = "Secure Website Designer";
+let i = 0;
+function typing() {
+  if(i < text.length){
+    document.getElementById("typing").innerHTML += text.charAt(i);
     i++;
-    setTimeout(typing,80);
+    setTimeout(typing, 80);
   }
 }
 typing();
 
 // Pricing calculator
-const type=document.getElementById("type");
-const security=document.getElementById("security");
-const total=document.getElementById("total");
-function calculate(){
-  let price=parseInt(type.value)+parseInt(security.value);
-  total.innerText="$"+price;
+const pages = document.getElementById("pages");
+const extras = document.getElementById("extras");
+const total = document.getElementById("total");
+
+function calculateTotal() {
+  const pagePrice = 500;
+  const numPages = parseInt(pages.value) || 1;
+  const extraPrice = parseInt(extras.value) || 0;
+  const totalPrice = (pagePrice * numPages) + extraPrice;
+  total.innerText = "$" + totalPrice;
 }
-type.addEventListener("change",calculate);
-security.addEventListener("change",calculate);
+
+// Event listeners
+pages.addEventListener("input", calculateTotal);
+extras.addEventListener("change", calculateTotal);
+
+// Initialize total
+calculateTotal();
 
 // Mobile menu toggle
-document.querySelector(".menu-toggle").addEventListener("click",function(){
+document.querySelector(".menu-toggle").addEventListener("click", function(){
   document.querySelector(".nav-links").classList.toggle("active");
 });
