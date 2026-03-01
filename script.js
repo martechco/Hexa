@@ -1,39 +1,33 @@
 // Typing effect
-const textArray = [
-    "Secure Website Designer",
-    "Frontend Developer",
-    "Cybersecurity Enthusiast"
-];
+const text = "Secure Website Designer";
+let i = 0;
 
-let typingElement = document.getElementById("typing");
-let textIndex = 0;
-let charIndex = 0;
-
-function type() {
-    if (charIndex < textArray[textIndex].length) {
-        typingElement.textContent += textArray[textIndex].charAt(charIndex);
-        charIndex++;
-        setTimeout(type, 100);
-    } else {
-        setTimeout(erase, 1500);
+function typingEffect() {
+    if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typingEffect, 80);
     }
 }
+window.onload = typingEffect;
 
-function erase() {
-    if (charIndex > 0) {
-        typingElement.textContent = textArray[textIndex].substring(0, charIndex - 1);
-        charIndex--;
-        setTimeout(erase, 50);
-    } else {
-        textIndex++;
-        if (textIndex >= textArray.length) textIndex = 0;
-        setTimeout(type, 500);
-    }
+// Pricing Calculator
+function calculatePrice() {
+    let pages = document.getElementById("pages").value;
+    let seo = document.getElementById("seo").checked;
+    let security = document.getElementById("security").checked;
+
+    let total = pages * 50;
+
+    if (seo) total += 100;
+    if (security) total += 150;
+
+    document.getElementById("total").innerText = total;
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-    type();
+// Mobile menu
+document.querySelector(".menu-toggle").addEventListener("click", function(){
+    document.querySelector(".nav-links").classList.toggle("active");
 });
-
 // Mobile menu toggle
 const menu
