@@ -11,23 +11,8 @@ header{display:flex;justify-content:space-between;align-items:center;padding:20p
 .menu-toggle{display:none;font-size:28px;cursor:pointer;color:#00ffae;}
 
 /* Hero Section */
-.hero{
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 10%;
-  overflow: hidden;
-}
-.hero-content{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  flex-wrap: nowrap;
-  width:100%;
-  max-width:1200px;
-}
+.hero{position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 0 10%; overflow: hidden;}
+.hero-content{display:flex; justify-content:space-between; align-items:center; flex-wrap: nowrap; width:100%; max-width:1200px;}
 .hero-text{max-width:600px; z-index:1;}
 .hero-text h1{font-size:60px;font-weight:800;color:white;}
 .hero-text span{color:#00ffae;}
@@ -35,9 +20,7 @@ header{display:flex;justify-content:space-between;align-items:center;padding:20p
 .hero-text p{margin:20px 0;color:#ccc;font-size:18px;}
 .btn{display:inline-block;padding:14px 30px;background:#00ffae;color:#0f172a;border-radius:35px;text-decoration:none;font-weight:700;font-size:18px;transition:0.3s;box-shadow:0 5px 15px #00ffae50;transform-style:preserve-3d;}
 .btn:hover{transform:translateY(-5px) rotateX(5deg) scale(1.1);box-shadow:0 10px 25px #00ffae80;}
-
-/* Hero Image */
-.hero-img{max-width:300px; z-index:1; border-radius:20px; overflow:hidden; box-shadow:0 15px 35px rgba(0,255,174,0.5); transform: rotate(-1deg); transition: transform 0.3s, box-shadow 0.3s;}
+.hero-img{max-width:300px; border-radius:20px; overflow:hidden; box-shadow:0 15px 35px rgba(0,255,174,0.5); transform: rotate(-1deg); transition: transform 0.3s, box-shadow 0.3s;}
 .hero-img img{width:100%; display:block; border-radius:20px;}
 .hero-img:hover{transform: scale(1.05) rotate(0deg); box-shadow:0 25px 55px rgba(0,255,174,0.8);}
 
@@ -47,18 +30,20 @@ header{display:flex;justify-content:space-between;align-items:center;padding:20p
 .social-links a:hover{color:#ffb700;text-decoration:underline;}
 
 /* Sections */
-.section{padding:120px 10%;text-align:center;}
+.section{padding:120px 10%; text-align:center;}
 .section-title{margin-bottom:50px;font-size:36px;font-weight:800;color:#00ffae;letter-spacing:1px;}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;margin-top:40px;}
 .card{background:#1e293b;padding:25px;border-radius:20px;transition:all 0.3s ease;}
 .card:hover{transform:translateY(-10px) scale(1.05);box-shadow:0 15px 35px #00ffae30;}
 
 /* Calculator */
-.calculator{background:#1e293b;padding:40px;border-radius:20px;max-width:500px;margin:auto;text-align:center;animation:fadeInUp 1s ease;}
+.calculator{background:#1e293b;padding:40px;border-radius:20px;max-width:500px;margin:auto;text-align:center;animation:fadeInUp 1s ease;box-shadow:0 10px 25px #00ffae20;transition:transform 0.3s, box-shadow 0.3s;}
+.calculator:hover{transform:translateY(-5px) scale(1.02);box-shadow:0 20px 50px #00ffae40;}
 .calculator input,.calculator select{width:100%;padding:14px;margin:10px 0;border-radius:12px;border:none;font-size:16px;background:#0f172a;color:white;transition:0.3s;}
 .calculator input:focus,.calculator select:focus{outline:none;box-shadow:0 0 15px #00ffae;}
 .price{font-size:28px;margin-top:20px;color:#00ffae;font-weight:700;}
-.calc-img{max-width:150px;margin-bottom:20px;border-radius:15px;}
+.calc-img{max-width:180px;margin-bottom:20px;border-radius:15px;transition: transform 0.3s;}
+.calc-img:hover{transform: scale(1.05);}
 
 /* Contact Form */
 .contact-form{max-width:500px;margin:auto;display:flex;flex-direction:column;gap:12px;}
@@ -70,9 +55,6 @@ header{display:flex;justify-content:space-between;align-items:center;padding:20p
 
 /* Footer */
 footer{text-align:center;padding:25px;background:#0b1120;margin-top:50px;}
-
-/* Hero Background Canvas */
-#hero-bg{position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;}
 
 /* Mobile Responsive */
 @media(max-width:768px){
