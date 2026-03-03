@@ -1,95 +1,79 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #0f172a;
-  color: white;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
-  background-color: #1e293b;
+
+/* Navbar */
+.navbar {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
 }
 
-header .logo {
-  font-size: 24px;
-  font-weight: bold;
+.logo {
+    background-color: orange;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 50px;
+    font-weight: bold;
 }
 
-header nav a {
-  margin-left: 20px;
-  color: white;
-  text-decoration: none;
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
 }
 
+
+/* Hero Section */
 .hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 50px;
+    display: flex;
+    padding: 40px;
+    align-items: center;
+}
+
+.hero-text {
+    width: 50%;
 }
 
 .hero-text h1 {
-  font-size: 40px;
+    font-size: 40px;
 }
 
-.hero-text h2 {
-  font-size: 24px;
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
 }
 
-.hero-logo {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.hero-image {
+    width: 50%;
+    text-align: right;
 }
 
-.logo-circle {
-  display: inline-block;
-  padding: 40px;
-  background-color: #00ffae;
-  color: #0f172a;
-  border-radius: 50%;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
+.hero-image img {
+    width: 300px;
 }
 
-section {
-  padding: 50px;
+
+/* Sections */
+.about, .services, .pricing, .contact {
+    padding: 40px;
 }
 
-.cards {
-  display: flex;
-  gap: 20px;
+.price-box {
+    margin-top: 20px;
 }
 
-.card {
-  flex: 1;
-  background-color: #1e293b;
-  padding: 20px;
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
 }
-
-.pricing-list p {
-  font-size: 18px;
-  margin: 10px 0;
-}
-
-input, select, textarea, button {
-  display: block;
-  width: 100%;
-  margin: 8px 0;
-  padding: 10px;
-  background-color: #1e293b;
-  border: none;
-  color: white;
-}
-
-button {
-  background-color: #00ffae;
-  color: #0f172a;
-  cursor: pointer;
-  }
