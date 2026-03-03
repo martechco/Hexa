@@ -1,116 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hexa | Secure Web Designer</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Hexa | Secure Web Designer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <div class="logo">Hexa</div>
-  <div class="menu-toggle">&#9776;</div>
-  <nav class="nav-links">
-    <a href="#services">Services</a>
-    <a href="#features">Features</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#reviews">Reviews</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <!-- Header -->
+  <header>
+    <div class="logo">Hexa</div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<!-- Hero Section -->
-<section class="hero">
-  <canvas id="hero-bg"></canvas>
-  <div class="hero-content">
+  <!-- Hero Section -->
+  <section class="hero">
     <div class="hero-text">
-      <h1>Hi, <span>I'm Hexa</span></h1>
-      <h2 id="typing"></h2>
+      <h1>Hi, I'm Hexa</h1>
+      <h2>Secure Website Designer</h2>
       <p>I design and secure modern websites for startups and businesses.</p>
-      <a href="#pricing" class="btn">Calculate Your Project</a>
 
       <div class="social-links">
-        <a href="https://x.com/Labost909" target="_blank">X</a>
-        <a href="https://tiktok.com/hexa.creativity" target="_blank">TikTok</a>
+        <a href="https://x.com/Labost909">X</a>
+        <a href="https://tiktok.com/hexa.creativity">TikTok</a>
         <a href="mailto:hexacreativity208@gmail.com">Email</a>
       </div>
     </div>
-    <div class="hero-img">
-      <img src="GitHub.png.png" alt="Web Designer">
+
+    <div class="hero-logo">
+      <span class="logo-circle">Hexa</span>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Services Section -->
-<section id="services" class="section">
-  <h2 class="section-title">My Services</h2>
-  <div class="cards">
-    <div class="card"><h3>Website Design</h3><p>Modern responsive UI/UX design for your business.</p></div>
-    <div class="card"><h3>Secure Development</h3><p>Protection against vulnerabilities and hacks.</p></div>
-    <div class="card"><h3>Pen Testing</h3><p>Identify and fix security issues before launch.</p></div>
-  </div>
-</section>
-
-<!-- Features Section -->
-<section id="features" class="section">
-  <h2 class="section-title">Features</h2>
-  <div class="cards">
-    <div class="card"><h3>Responsive Design</h3><p>Optimized for desktop, tablet, and mobile devices.</p></div>
-    <div class="card"><h3>Interactive UI</h3><p>Animated buttons, hover effects, and smooth transitions.</p></div>
-    <div class="card"><h3>Secure Code</h3><p>Following best practices to protect your website.</p></div>
-  </div>
-</section>
-
-<!-- Pricing Calculator Section -->
-<section id="pricing" class="section">
-  <h2 class="section-title">Project Pricing Calculator</h2>
-  <div class="calculator">
-    <img src="Images(4).png" alt="Calculator Illustration" class="calc-img">
-    <label for="pages">Number of Pages:</label>
-    <input type="number" id="pages" min="1" value="1">
-
-    <label for="extras">Extras:</label>
-    <select id="extras">
-      <option value="0">No Extra</option>
-      <option value="300">Advanced Security - $300</option>
-      <option value="200">SEO Optimization - $200</option>
-      <option value="400">Custom Animations - $400</option>
-    </select>
-
-    <div class="price">
-      Total: <span id="total">$500</span>
+  <!-- Services Section -->
+  <section id="services">
+    <h2>My Services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Website Design</h3>
+        <p>Modern responsive UI/UX design for your business.</p>
+      </div>
+      <div class="card">
+        <h3>Secure Development</h3>
+        <p>Protection against vulnerabilities and hacks.</p>
+      </div>
+      <div class="card">
+        <h3>Pen Testing</h3>
+        <p>Identify and fix security issues before launch.</p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Reviews Section -->
-<section id="reviews" class="section reviews dark">
-  <h2 class="section-title">Customer Reviews</h2>
-  <div class="cards">
-    <div class="card"><p>"Hexa built a secure website for my company. Highly professional!"</p><h4>- Sarah K.</h4></div>
-    <div class="card"><p>"Very clean design and strong security implementation."</p><h4>- James T.</h4></div>
-    <div class="card"><p>"Best web designer I’ve worked with. Fast and reliable."</p><h4>- Daniel M.</h4></div>
-  </div>
-</section>
+  <!-- Features Section -->
+  <section id="features">
+    <h2>Features</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Interactive UI</h3>
+        <p>Buttons and links designed for engagement.</p>
+      </div>
+      <div class="card">
+        <h3>Secure Code</h3>
+        <p>Following best practices to protect your website.</p>
+      </div>
+      <div class="card">
+        <h3>Clean Design</h3>
+        <p>Simple and professional design layout.</p>
+      </div>
+    </div>
+  </section>
 
-<!-- Contact Section -->
-<section id="contact" class="section">
-  <h2 class="section-title">Contact Me</h2>
-  <p>Email me directly at <a href="mailto:hexacreativity208@gmail.com" class="email-link">hexacreativity208@gmail.com</a></p>
-  <form class="contact-form">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message" required></textarea>
-    <button type="submit" class="btn">Send Message</button>
-  </form>
-</section>
+  <!-- Pricing Section -->
+  <section id="pricing">
+    <h2>Project Pricing</h2>
+    <div class="pricing-list">
+      <p>Simple 1-page website: <strong>$500</strong></p>
+      <p>Small business website (3-5 pages): <strong>$1200</strong></p>
+      <p>Large website (6+ pages): <strong>$2000+</strong></p>
+      <p>Custom extras (SEO, security, animations) available upon request.</p>
+    </div>
+  </section>
 
-<footer>
-  <p>© 2026 Hexa | Secure Web Designer</p>
-</footer>
+  <!-- Reviews Section -->
+  <section id="reviews">
+    <h2>Customer Reviews</h2>
+    <div class="cards">
+      <div class="card"><p>"Hexa built a secure website for my company. Highly professional!"</p><h4>- Sarah K.</h4></div>
+      <div class="card"><p>"Very clean design and strong security implementation."</p><h4>- James T.</h4></div>
+      <div class="card"><p>"Best web designer I’ve worked with. Fast and reliable."</p><h4>- Daniel M.</h4></div>
+    </div>
+  </section>
 
-<script src="script.js"></script>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email me directly at <a href="mailto:hexacreativity208@gmail.com">hexacreativity208@gmail.com</a></p>
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Hexa | Secure Web Designer</p>
+  </footer>
+
 </body>
-  </html>
+      </html>
