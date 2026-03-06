@@ -1,79 +1,110 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#0f172a;
+color:white;
 }
 
 
-/* Navbar */
-.navbar {
-    background-color: black;
-    color: white;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
+/* Navigation */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:#020617;
 }
 
-.logo {
-    background-color: orange;
-    color: white;
-    padding: 8px 15px;
-    border-radius: 50px;
-    font-weight: bold;
+.logo{
+font-size:20px;
+font-weight:bold;
+background:#22c55e;
+padding:6px 14px;
+border-radius:20px;
+color:black;
 }
 
-.menu a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-size:15px;
 }
 
 
-/* Hero Section */
-.hero {
-    display: flex;
-    padding: 40px;
-    align-items: center;
+/* Hero */
+
+.hero{
+text-align:center;
+padding:60px 20px;
 }
 
-.hero-text {
-    width: 50%;
+.hero h1{
+font-size:40px;
+margin-bottom:10px;
 }
 
-.hero-text h1 {
-    font-size: 40px;
+.hero p{
+font-size:18px;
+margin-bottom:30px;
 }
 
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    text-decoration: none;
+.hero-image{
+text-align:center;
 }
 
-.hero-image {
-    width: 50%;
-    text-align: right;
-}
-
-.hero-image img {
-    width: 300px;
+.hero-image img{
+width:150px;
+height:auto;
+display:block;
+margin:auto;
 }
 
 
 /* Sections */
-.about, .services, .pricing, .contact {
-    padding: 40px;
+
+section{
+padding:50px 60px;
 }
 
-.price-box {
-    margin-top: 20px;
+
+/* Services */
+
+.services{
+background:#020617;
 }
 
-.footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 15px;
+.service{
+margin-bottom:25px;
+}
+
+
+/* Pricing */
+
+.pricing{
+background:#020617;
+}
+
+.price{
+margin-bottom:25px;
+}
+
+
+/* Contact */
+
+.contact a{
+color:#22c55e;
+text-decoration:none;
+font-size:18px;
+}
+
+
+/* Footer */
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+margin-top:40px;
 }
